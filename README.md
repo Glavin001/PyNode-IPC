@@ -18,8 +18,11 @@ Node.js and Python Inter-Process Communication example using ZeroMQ. For CSCI 34
 
 ## Dependencies
 `libzmq`: https://github.com/zeromq/pyzmq/wiki/Building-and-Installing-PyZMQ#linux 
+
 `PyZMQ`: https://github.com/zeromq/pyzmq
+
 `Zeromq.node`: https://github.com/JustinTulloss/zeromq.node 
+
 
 ## Easy automated installation for Mac & Linux
 Run the following in your Terminal with the current working directory being the root of this project:

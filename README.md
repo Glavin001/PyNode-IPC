@@ -16,3 +16,26 @@ Node.js and Python Inter-Process Communication example using ZeroMQ. For CSCI 34
 > Please identify which languages, which versions of the compiler and which computer operating systems or 
 >environments you are using. 
 
+## Dependencies
+`libzmq`: https://github.com/zeromq/pyzmq/wiki/Building-and-Installing-PyZMQ#linux 
+`PyZMQ`: https://github.com/zeromq/pyzmq
+`Zeromq.node`: https://github.com/JustinTulloss/zeromq.node 
+
+## Easy automated installation for Mac & Linux
+Run the following in your Terminal with the current working directory being the root of this project:
+```bash
+./install.sh
+```
+
+## Usage
+Run the following in your Terminal with the current working directory being the root of this project:
+`Node.js` as *Caller* and `Python` as *Receiver*:
+```bash
+npm start
+```
+
+
+## Support
+- `Mac`, installation and execution all ran successfully.
+- `Ubuntu`, not tested.
+- `Windows`, not supported.

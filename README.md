@@ -18,6 +18,8 @@ Node.js and Python Inter-Process Communication example using ZeroMQ. For CSCI 34
 > Please identify which languages, which versions of the compiler and which computer operating systems or 
 >environments you are using. 
 
+-----
+
 ## Dependencies
 `libzmq`: https://github.com/zeromq/pyzmq/wiki/Building-and-Installing-PyZMQ#linux 
 
@@ -25,31 +27,47 @@ Node.js and Python Inter-Process Communication example using ZeroMQ. For CSCI 34
 
 `Zeromq.node`: https://github.com/JustinTulloss/zeromq.node 
 
-
 ## Easy automated installation for Mac & Linux
 Run the following in your Terminal with the current working directory being the root of this project:
 ```bash
 ./install.sh
 ```
 
-## Usage
-Run the following in your Terminal with the current working directory being the root of this project:
-
-#### `Python` as *Caller* and `Node.js` as *Receiver*:
-1. Start Node.js Receiver
-```bash
-node receiver.js
-```
-2. Start Python Caller
-```bash
-python caller.py
-```
-3. Enter your integers as prompted and try it out!
-
-#### `Node.js` as *Caller* and `Python` as *Receiver*:
-*Not yet supported.*
-
 ## Support
 - `Mac`, installation and execution all ran successfully.
 - `Ubuntu`, not tested.
 - `Windows`, not supported.
+
+-----
+
+## Usage
+Run the following in your Terminal with the current working directory being the root of this project:
+
+#### `Python` as *Caller* and `Node.js` as *Receiver*:
+###### Step 1) Start Node.js Receiver
+
+```bash
+node receiver.js
+```
+###### Step 2) Start Python Caller
+
+```bash
+python caller.py
+```
+###### Step 3) Enter your integers as prompted and try it out!
+
+
+#### `Node.js` as *Caller* and `Python` as *Receiver*:
+###### Step 1) Start Python Receiver
+
+```bash
+python receiver.py
+```
+###### Step 2) Start Node.js Caller
+
+```bash
+node caller.js
+```
+###### Step 3) Enter your integers as prompted and try it out!
+
+-----

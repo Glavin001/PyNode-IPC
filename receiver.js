@@ -1,6 +1,6 @@
 var zmq = require('zmq')
 //, sockPush = zmq.socket('push')
-, sockPull = zmq.socket('rep');
+//, sockPull = zmq.socket('rep');
 
 /*
 sockPush.bindSync('tcp://127.0.0.1:3000');
@@ -20,22 +20,25 @@ sockPull.on('message', function(msg){
     console.log('work: %s', msg.toString());
 });
 */
+var port = 3000;
 
 var socket = zmq.socket('rep');
 
   socket.identity = 'server' + process.pid;
 
-  socket.bind("tcp://127.0.0.1:3000", function(err) {
+  socket.bind("tcp://127.0.0.1:"+port, function(err) {
     if (err) throw err;
-    console.log('bound!');
+    console.log("Bound to port "+port+".");
 
     socket.on('message', function(data) {
-      console.log(socket.identity + ': received ' + data.toString());
+      //console.log(socket.identity + ': received ' + data.toString());
+      console.log("Received: "+data.toString());
       data = JSON.parse( data );
       var A = data["A"];
       var B = data["B"];
-      console.log(A, B);
+      //console.log(A, B);
       var answer = Math.floor( A / B );
+      console.log("Sent: "+answer);
       socket.send(answer);
     });
 });

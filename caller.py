@@ -25,4 +25,4 @@ socket.send(json.dumps({'A':input1, 'B':input2}))
 # Receive reply
 answer = socket.recv()
 
-print input1, "/", input2, " = ",answer, " (when casted as integer)"
+print str(input1)+" / "+str(input2)+" = "+str(answer)+" (when casted as integer)"

@@ -35,13 +35,19 @@ Run the following in your Terminal with the current working directory being the 
 ## Usage
 Run the following in your Terminal with the current working directory being the root of this project:
 
-#### `Node.js` as *Caller* and `Python` as *Receiver*:
-```bash
-npm start
-```
-
 #### `Python` as *Caller* and `Node.js` as *Receiver*:
-Not yet supported.
+1. Start Node.js Receiver
+```bash
+node receiver.js
+```
+2. Start Python Caller
+```bash
+python caller.py
+```
+3. Enter your integers as prompted and try it out!
+
+#### `Node.js` as *Caller* and `Python` as *Receiver*:
+*Not yet supported.*
 
 ## Support
 - `Mac`, installation and execution all ran successfully.

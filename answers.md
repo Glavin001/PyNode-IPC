@@ -20,7 +20,8 @@ The [Linux Kernel is mostly written in C](http://en.wikipedia.org/wiki/Linux_ker
 the [popular multi-platform GUI toolkit, GTK+, is written in C](http://www.gtk.org), and supports C, C++, and many others.
 
 #### c) Android tablet Bluetooth keyboard device driver
-
+Android development is done using [Java and Android's SDK](http://developer.android.com/sdk/index.html)
+and there is a [Bluetooth API in Android's SDK](http://developer.android.com/guide/topics/connectivity/bluetooth.html).
 
 #### d) Windows 8 desktop GUI application
 

@@ -35,4 +35,9 @@ and there is a [Bluetooth API in Android's SDK](http://developer.android.com/gui
 #### C string buffer overflow
 
 #### binary fuzzing
+Fuzzing - Intentionally providing bad data to find bugs
+Can be random data insertion
+Identify NEW Intrusion vectors
+No chance if nobody has published it yet
+
 

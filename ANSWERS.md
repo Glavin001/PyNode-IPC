@@ -23,7 +23,7 @@ Android development is done using [Java and Android's SDK](http://developer.andr
 and there is a [Bluetooth API in Android's SDK](http://developer.android.com/guide/topics/connectivity/bluetooth.html).
 
 #### d) Windows 8 desktop GUI application
-
+[Windows 8 now supports building apps with HTML, CSS, and JavaScript](http://blogs.msdn.com/b/cdnstudents/archive/2012/12/20/building-a-great-windows-8-app-step-4-pick-your-programming-language.aspx). It all depends on the type of GUI application. A web based app is what I would intially recommend and then if you require more performance and API calls that require native code then you could use C# or VB .NET, which are popular and relatively easy to use, after web-based of course.
 
 ### 3) (2 pts) Describe any two language defects that a hacker can use to create an exploit. 
 > ### For example, SQL ”;”, binary HTML/XML injection, late-bound substitution, C string buffer overflow, binary fuzzing, .. etc. Code is NOT necessary and definitely NOT recommended.

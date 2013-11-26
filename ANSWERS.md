@@ -26,7 +26,7 @@ and there is a [Bluetooth API in Android's SDK](http://developer.android.com/gui
 
 
 ### 3) (2 pts) Describe any two language defects that a hacker can use to create an exploit. 
-### For example, SQL ”;”, binary HTML/XML injection, late-bound substitution, C string buffer overflow, binary fuzzing, .. etc. Code is NOT necessary and definitely NOT recommended.
+> ### For example, SQL ”;”, binary HTML/XML injection, late-bound substitution, C string buffer overflow, binary fuzzing, .. etc. Code is NOT necessary and definitely NOT recommended.
 
 #### SQL Injection
 
@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-#### binary fuzzing
+#### Binary Fuzzing
 Intentionally providing bad data to find bugs
 - Can be random data insertion
 - Identify NEW Intrusion vectors

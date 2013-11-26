@@ -6,6 +6,7 @@ Node.js and Python Inter-Process Communication example using ZeroMQ. For CSCI 34
 `Github Repository`: https://github.com/Glavin001/PyNode-IPC 
 
 ## Description of Assignment
+See [L10.pdf](L10.pdf) for complete list of questions.
 > Write code that demonstrates one computer language calling and receiving data back from another 
 > language. The first language reads two integers from the user (A, B) and passes them as binary values to a 
 > separately compiled function written in a different language. That second function divides the second 

@@ -1,11 +1,10 @@
 # Answers
 
-### 1) 
+### 1) Coding qustion.
 See the code.
 
-### 2) 
-(2 pts) Describe (in your opinion) the best computer language for developing the following programs. 
-Please state some sort of reason why you chose that language.
+### 2) (2 pts) Describe (in your opinion) the best computer language for developing the following programs. 
+### Please state some sort of reason why you chose that language.
 
 #### a) App for the latest Apple iPod, iPad and iPhone
 [Objective-C](http://en.wikipedia.org/wiki/Objective-C) is the best computer programming language for developing on iOS devices.

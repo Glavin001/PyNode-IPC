@@ -2,6 +2,11 @@
 echo "===== Installing dependencies for Linux ====="
 echo
 
+if [[ $UID != 0 ]]; then
+    echo "Please run this script with sudo:"
+    echo "sudo $0 $*"
+    exit 1
+fi
 
 echo "Installing ZeroMQ"
 echo "Using installation guide from http://maddigitiser.wordpress.com/2013/05/02/installing-zeromq-on-ubuntu-13-04/ "
@@ -13,8 +18,7 @@ wget http://download.zeromq.org/zeromq-3.2.2.tar.gz
 tar zxvf zeromq-3.2.2.tar.gz && cd zeromq-3.2.2
 ./configure
 make && make install
-#cd "$dir"
-cd ../
+cd "$dir"
 echo "Done"
 echo
 

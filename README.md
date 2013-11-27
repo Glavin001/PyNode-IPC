@@ -6,7 +6,7 @@ Node.js and Python Inter-Process Communication example using ZeroMQ. For CSCI 34
 `Github Repository`: https://github.com/Glavin001/PyNode-IPC 
 
 ### Quick One Line Terminal Installation
-See below for more details.
+Copy and paste into your Terminal:
 ```bash
 git clone https://github.com/Glavin001/PyNode-IPC && cd PyNode-IPC && ./install.sh
 ```
@@ -33,8 +33,8 @@ Run the following in your Terminal with the current working directory being the 
 ```
 
 ## Support
-- `Mac`, installation and execution all ran successfully.
-- `Ubuntu`, not tested.
+- `Mac`, installation and test all ran successfully.
+- `Ubuntu`, installation and test all ran successfully.
 - `Windows`, not supported.
 
 -----

@@ -15,7 +15,7 @@ make && make install
 echo "Done"
 echo
 
-cd dir
+cd $dir
 echo "Installing Python requirements with Pip"
 echo "Includes Pyzmq, Python Binding for ZMQ"
 pip install -r requirements.txt

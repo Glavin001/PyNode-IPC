@@ -2,20 +2,22 @@
 echo "===== Installing dependencies for Linux ====="
 echo
 
-dir=$(pwd)
 
 echo "Installing ZeroMQ"
 echo "Using installation guide from http://maddigitiser.wordpress.com/2013/05/02/installing-zeromq-on-ubuntu-13-04/ "
 sudo apt-get install libtool autoconf automake uuid-dev build-essential
-cd ~
+dir="$(pwd)"
+mkdir downloads
+cd downloads/
 wget http://download.zeromq.org/zeromq-3.2.2.tar.gz
 tar zxvf zeromq-3.2.2.tar.gz && cd zeromq-3.2.2
 ./configure
 make && make install
+#cd "$dir"
+cd ../
 echo "Done"
 echo
 
-cd $dir
 echo "Installing Python requirements with Pip"
 echo "Includes Pyzmq, Python Binding for ZMQ"
 pip install -r requirements.txt

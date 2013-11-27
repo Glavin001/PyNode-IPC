@@ -14,14 +14,14 @@ sudo apt-get install libtool autoconf automake uuid-dev build-essential
 dir="$(pwd)"
 mkdir downloads
 cd downloads/
-w="$(pwd)"
-if [ ! -d "$w/zeromq-3.2.2.tar.gz" ]; then
+if [ ! -f "zeromq-3.2.2.tar.gz" ]; then
     # Control will enter here if $DIRECTORY doesn't exist.
     echo "Downloading ZeroMQ 3.2.2"
     wget http://download.zeromq.org/zeromq-3.2.2.tar.gz
 fi
-tar zxvf zeromq-3.2.2.tar.gz && cd zeromq-3.2.2
-./configure
+tar zxvf zeromq-3.2.2.tar.gz && \
+cd zeromq-3.2.2 && \ 
+./configure && \
 make && make install
 cd "$dir"
 echo "Done"

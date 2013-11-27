@@ -8,7 +8,7 @@ if [ "$(uname)" == "Darwin" ]; then
     ./install_mac.sh
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under Linux platform
-    ./install_linux.sh
+    sudo ./install_linux.sh
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     # Do something under Windows NT platform
     ./install_windows.sh
